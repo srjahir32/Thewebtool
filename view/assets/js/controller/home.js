@@ -25,10 +25,7 @@ MyApp.config(['$routeProvider', function ($routeProvider) {
             templateUrl: '/tpl/vcftoexcel.html',
             controller: 'home'
         }).
-        when('/vcftocsv/', {
-            templateUrl: '/tpl/vcftocsv.html',
-            controller: 'home'
-        }).
+
         otherwise({
             redirectTo: '/home'
         });
@@ -54,22 +51,11 @@ MyApp.controller('home',['Upload','$scope', '$window', '$http',
 {
 
  
-<<<<<<< HEAD
-     $scope.ExcelToVcf = function () 
-     {
-         
-        console.log("filedata",$scope.Excelfile);
-          console.log("email-data",$scope.email);
-       var reader = new FileReader();
-          $scope.filename=$scope.Excelfile.name;
-          var file = $scope.Excelfile;
-=======
      $scope.ExcelToVcf = function (file) 
      {
         
         var reader = new FileReader();
           $scope.filename=file.name;
->>>>>>> origin/master
           Upload.upload({
                 url: 'http://localhost:3000/exceltovcf', 
                 data:( {
@@ -78,21 +64,14 @@ MyApp.controller('home',['Upload','$scope', '$window', '$http',
             }).then(function (res) 
                     {
                         console.log('res',res);
-<<<<<<< HEAD
-=======
                           
                         
->>>>>>> origin/master
                           $scope.path=res.data.path;
                           $scope.download = true;
                           console.log("path",$scope.path);
                            var params = {
                             "path":$scope.path,
-<<<<<<< HEAD
-                            "email":$scope.email
-=======
                             "email":'kumbhani.bhavesh.1@gmail.com'
->>>>>>> origin/master
                         };
                                 $http({
                                     method:"POST",
@@ -119,13 +98,8 @@ MyApp.controller('home',['Upload','$scope', '$window', '$http',
 
                       
                       // console.log("$sope.path",$scope.path);
-<<<<<<< HEAD
-                       
-                 /*        var params = {
-=======
                    /*    
                         var params = {
->>>>>>> origin/master
                             "path":$scope.path,
                             "email":'kumbhani.bhavesh.1@gmail.com'
                         };

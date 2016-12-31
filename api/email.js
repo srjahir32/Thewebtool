@@ -17,21 +17,14 @@ console.log("path",path1);
             pass: 'satish parmar' // Your password
         }
     });
-<<<<<<< HEAD
-=======
    
   
->>>>>>> origin/master
 
 
 var mailOptions = {
     from: 'satish6073@gmail.com', // sender address
     to: email, // list of receivers
-<<<<<<< HEAD
-    subject: 'thewebtools', // Subject line
-=======
     subject: 'Email Example', // Subject line
->>>>>>> origin/master
    
     attachments:[
         {   

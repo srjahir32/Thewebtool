@@ -2,24 +2,12 @@
     Excel/CSV to VCF 
 </header>
 
-<<<<<<< HEAD
-  
-  <div style="margin-bottom:50px">
-    Enter Email
-    <input type="text" ng-model="email" placeholder="Type Email"/>
-  </div>
-=======
   <p>Enter Email=:-</p><div><input type="text" ng-model="email" placeholder="Enter Email"/></div>
->>>>>>> origin/master
 
   <!-- Excel to Vcf -->
     <form id="uploadForm">
      Select Excel File:-   <input type="file" name="file" ngf-select accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" ng-model="Excelfile"  />Upload
-<<<<<<< HEAD
-        <input type="submit" value="Upload" name="submit" ng-click="ExcelToVcf()">
-=======
         <input type="submit" value="Upload" name="submit" ng-click="ExcelToVcf(Excelfile)">
->>>>>>> origin/master
     </form>
 
     <div ng-show="download">

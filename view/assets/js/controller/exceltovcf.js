@@ -19,15 +19,13 @@ myapp.controller('exceltovcf',['Upload','$scope', '$window', '$http',
         var reader = new FileReader();
           $scope.filename=file.name;
           Upload.upload({
-                url: 'http://localhost:3000/exceltovcf', 
+                url: 'http://localhost:3000/exceltocvf', 
                 data:( {
                     file: file
                 } )
             }).then(function (res) 
                     {
                         console.log('res',res);
-                          $scope.path=res.data.path;
-                                $scope.download = true;
                     },
                     function Error(res) 
                     {

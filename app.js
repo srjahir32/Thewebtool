@@ -1,4 +1,4 @@
-	var express = require('express'); 
+ var express = require('express'); 
     var app = express(); 
     var bodyParser = require('body-parser');
     var multer = require('multer');
@@ -8,16 +8,9 @@
     var vcftocsv=require(__dirname +'/api/VcftoCsv.js');
     var email=require(__dirname +'/api/email.js');
     var router = express.Router();
-    var http = require('http');
 
     app.use(bodyParser.json());  
-
-
-app.set('port', process.env.OPENSHIFT_NODEJS_PORT || 3000);
-app.set('ip', process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1');
-
-
-
+ 
 router.get('/test',function(req,res)
 {
     res.sendFile(__dirname + "/index.html");
@@ -53,6 +46,6 @@ app.use("/uploads", express.static(__dirname + '/uploads'));
 app.use("/tpl",express.static(__dirname+'/view/assets/tpl'));
 
 
-http.createServer(app).listen(app.get('port'), app.get('ip'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
-});
+    app.listen('3000', function(){
+        console.log('running on 3000...');
+    });

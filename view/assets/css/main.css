@@ -25,7 +25,11 @@
 	body {
 		line-height: 1;
 	}
-
+h2{
+	color: gray;
+	text-align: center;
+	padding-top: 20px;
+}
 	ol, ul {
 		list-style: none;
 	}
@@ -2729,7 +2733,7 @@
 						margin-bottom: 0;
 					}
 
-			.tiles article.style1 > .image:before {
+		/*	.tiles article.style1 > .image:before {
 				background-color: #f2849e;
 			}
 
@@ -2743,7 +2747,7 @@
 
 			.tiles article.style4 > .image:before {
 				background-color: #c75b9b;
-			}
+			}*/
 
 			.tiles article.style5 > .image:before {
 				background-color: #ae85ca;
@@ -2751,7 +2755,7 @@
 
 			.tiles article.style6 > .image:before {
 				background-color: #8499e7;
-			}
+			} 
 
 			body:not(.is-touch) .tiles article:hover > .image {
 				-moz-transform: scale(1.1);
@@ -2759,7 +2763,7 @@
 				-ms-transform: scale(1.1);
 				transform: scale(1.1);
 			}
-
+          
 				body:not(.is-touch) .tiles article:hover > .image:before {
 					background-color: #333333;
 					opacity: 0.35;

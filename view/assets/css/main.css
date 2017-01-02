@@ -1627,7 +1627,8 @@ h2{
 	}
 
 	body {
-		background: #ffffff;
+		background:#e2e2e2;
+		
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -2151,7 +2152,7 @@ h2{
 	select,
 	textarea {
 		-moz-appearance: none;
-		-webkit-appearance: none;
+	
 		-ms-appearance: none;
 		appearance: none;
 		background-color: transparent;
@@ -2159,7 +2160,7 @@ h2{
 		border-radius: 0;
 		border-bottom: solid 1px #c9c9c9;
 		color: inherit;
-		display: block;
+	
 		outline: 0;
 		padding: 0;
 		text-decoration: none;
@@ -2223,6 +2224,7 @@ h2{
 	input[type="email"],
 	select {
 		height: 3em;
+		width: auto;
 	}
 
 	textarea {
@@ -2475,7 +2477,7 @@ h2{
 		box-shadow: inset 0 0 0 2px #585858;
 		color: #585858 !important;
 		cursor: pointer;
-		display: inline-block;
+		display: block;
 		font-size: 0.8em;
 		font-weight: 900;
 		height: 3.5em;
@@ -3197,7 +3199,7 @@ h2{
 
 	#footer {
 		padding: 5em 0 6em 0 ;
-		background-color: #f6f6f6;
+		
 	}
 
 		#footer > .inner {
@@ -3358,3 +3360,27 @@ h2{
 			}
 
 		}
+
+
+
+
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 17px;
+    margin-top: 25px;
+}
+
+
+
+/*.....invoice code style.......*/
+
+
+
+
+
+/*....end invoice code style....*/

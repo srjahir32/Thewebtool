@@ -218,7 +218,7 @@ exports.exceltovcf = function (req, res)
 
 
 
-
+/*
 exports.getExcelData = function (req, res) 
 {
     var storage = multer.diskStorage({ //multers disk storage settings
@@ -287,6 +287,6 @@ exports.getExcelData = function (req, res)
         }
     });
 
-}
+}*/
 
                 

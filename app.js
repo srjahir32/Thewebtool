@@ -22,8 +22,13 @@ router.get('/',function(req,res)
     res.sendFile(__dirname + "/view/index.html");
 });
 
+router.get('/invoice',function(req,res)
+{
+    res.sendFile(__dirname + "/view/assets/tpl/invoice.html");
+});
+
 app.post('/exceltovcf',excel.exceltovcf);
-app.post('/getExcelData',excel.getExcelData);
+//app.post('/getExcelData',excel.getExcelData);
 
 app.post('/vcftoEcel',vcf.vcftoexcel);
 

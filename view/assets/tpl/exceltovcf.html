@@ -1,20 +1,33 @@
 <header>
     Excel/CSV to VCF 
+      <style>
+input[type="file"] {
+    display: none;
+}
+
+  </style>
 </header>
 
-
-  
   <div style="margin-bottom:50px">
     Enter Email
-    <input type="text" ng-model="email" placeholder="Type Email"/>
+    <input  style="text-align: center"type="text" ng-model="email" placeholder="Type Email" required/>
   </div>
-
-  
-
 
   <!-- Excel to Vcf -->
     <form id="uploadForm">
-     Select Excel File:-   <input type="file" name="file" ngf-select accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" ng-model="Excelfile"  />Upload
+        Select Excel  File
+        <label for="file-upload" class="custom-file-upload">
+         <i class="fa fa-cloud-upload"></i>Browse
+       </label>
+      <input type="file" 
+         id="file-upload"
+         name="file"
+         onchange="uploadDone(this);"
+         ngf-select
+         accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" 
+         ng-model="Excelfile"  />
+         {{filename}}
+        <p ng-hide="Excelfile" style="color: red">{{message}}<p>
 
         <input type="submit" value="Upload" name="submit" ng-click="ExcelToVcf(Excelfile)">
 
